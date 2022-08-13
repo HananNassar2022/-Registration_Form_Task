@@ -10,14 +10,14 @@
     <p>Please fill out this form with the required information</p>
     <form action='https://formspree.io/f/mzbwbrke'>
       <fieldset>
-        <label>Enter Your First Name: <input type="text" name="first-name" value="text" placeholder="First Name" required  /></label>
-        <label>Enter Your Last Name: <input type="text" name="last-name" value="text" placeholder="Last Name" required /></label>
-        <label>Enter Your Email: <input type="email" name="email" value="email" placeholder="Name123@gmail.com" required /></label>
-        <label>phone number: <input type="tel" name="phone" value="tel" pattern="+970 123456789" placeholder="+970 123456789" required /></label>
-        <label>Input your date of birth: <input type="date" name="birth date" value="birth date" placeholder="18/5/2001" min="1950" max="2010" />
+        <label>Enter Your First Name: <input type="text" name="first-name" placeholder="First Name" required  /></label>
+        <label>Enter Your Last Name: <input type="text" name="last-name" placeholder="Last Name" required /></label>
+        <label>Enter Your Email: <input type="email" name="email" placeholder="Name123@gmail.com" required /></label>
+        <label>phone number: <input type="tel" name="phone" placeholder="+970 123456789" required /></label>
+        <label>Input your date of birth: <input type="date" name="birth-date" placeholder="18/5/2001" min="1950" max="2010" />
       <label>Country:
         <select name="referrer">
-          <option value="">(select one)</option>
+          <option value="" disabled>(select one)</option>
           <option value="1">Palestine</option>
           <option value="2">Jordan</option>
           <option value="3">Algeria</option>
@@ -44,16 +44,16 @@
           <option value="24">Pakistan</option>
         </select>
       </label>
-      <label>Create a New Password: <input type="password" name="password" pattern="[a-z0-9]{10,}" placeholder="make a goog password like: name123456" required /></label>
+      <label>Create a New Password: <input type="password" name="password" pattern="[a-z0-9]{8,}" placeholder="make a goog password like: name123456" required /></label>
      </fieldset>
       <fieldset>
-        <label><input type="radio" name="account-type" value="account-type" class="inline" /> Free Account</label>
-        <label><input type="radio" name="account-type" value="account-type" class="inline" /> Pro Account</label>
+        <label><input type="radio" name="account-type" class="inline" /> Free Account</label>
+        <label><input type="radio" name="account-type" class="inline" /> Pro Account</label>
         <label>
           <input type="checkbox" name="terms" class="inline" required /> I accept the terms and conditions</a>
         </label>
       </fieldset>
-      <input type="submit" value="Submit"  placeholder="Submit"/>
+      <input type="submit" placeholder="Submit"/>
     </form>
   </body>
 </html>
